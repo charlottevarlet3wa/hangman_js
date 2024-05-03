@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div id="ground">
+            <!-- <div id="tree-1"></div> -->
+            <div id="tree-2"></div>
+            <div id="hero">
+                <div id="hero-bar-container">
+                    <div id="hero-bar"></div>
+                </div>
+            </div>
+            <div id="enemy">
+                <div id="enemy-bar-container">
+                    <div id="enemy-bar"></div>
+                </div>
+            </div>
+        </div>
+    <!-- <h1>Hangman Game</h1> -->
+    <p id="wordToGuess">_ _ _ _ _</p>
+    <div id="keyboard"></div>
+    <!-- <div>
+        <label for="letterInput">Guess a letter:</label>
+        <input type="text" id="letterInput" maxlength="1" autofocus>
+        <button onclick="makeGuess()">Guess</button>
+    </div> -->
+    <p>Lettres utilisées : <span id="wrongGuesses"></span></p>
+    <p id="status"></p>
+    <button id="nextBtn" style="display:none;">Next Word</button>
+<p>Score: <span id="score">0/0</span></p>
+
+<p>
+</div>
+    <script src="game.js"></script>
+</body>
+</html>
